@@ -6,6 +6,8 @@
     <title>Sitio Dourado-HO</title>
     <style>
         *{
+            margin: 0px;
+            padding: 0px;
             text-decoration: none;
         }
         @font-face {
@@ -64,7 +66,6 @@
             background-color: #8C4D3E;
         }
         main{
-            padding-left: 10px;
             text-align: justify;
         }
         section#first{
@@ -73,7 +74,7 @@
             width: 100vw;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center center;
+            background-position: center top;
             background-attachment: fixed;
         }
         section#first div{
@@ -91,6 +92,87 @@
             font-weight: bolder;
             border-radius: 15px;
         }
+        section#mainsec{
+            background-color: #E2EFCD;
+            padding-bottom: 50px;
+        }
+        section#mainsec h1{
+            text-align: center;
+            font-size: 3em;
+            font-family: 'Sriracha';
+            background-color: var(--cor02);
+            color: white;
+            padding: 10px;
+            margin: auto;
+            box-shadow: inset 4px 3px rgba(0, 0, 0, 0.28);
+        }
+        section#mainsec h3{
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px;
+            margin: auto;
+            }
+        img.bodyimg{
+            background-color: #8C4D3E;
+            padding: 30px;
+            width: 350px;
+            height: 200px;
+            border-radius: 20px;
+            margin: auto;
+        }
+        div#divh2{
+            background-image: url(images/yVerão2.JPG);
+            width: auto;
+            height: 300px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 50px;
+        }
+        h2{
+            text-align: center;
+            font-size: 3em;
+            font-family: 'Sriracha';
+            background-color: var(--cor02);
+            color: white;
+            padding: 10px;
+            margin: auto;
+            box-shadow: inset 4px 3px rgba(0, 0, 0, 0.28);
+        }
+        h3{
+            font-style: italic;
+            color: var(--cor01);
+            padding: 10px;
+            text-decoration: underline;
+        }
+        .content{
+            background-color: var(--cor04);
+        }
+        .content p{
+            padding: 10px;
+            text-align: center;
+            text-indent: 4px;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+        .content a{
+            text-decoration: underline;
+            color:var(--cor01);
+            font-weight: bolder;
+        }
+        .content a:hover{
+            text-decoration: underline;
+            color: var(--cor03);
+        }
+        .content li{
+            padding: 10px;
+            text-align: justify;
+            text-indent: 4px;
+            font-size: 1.3em;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -99,9 +181,9 @@
             <div class="navdiv">
                 <div class="logo"><a href="#"><img src="images/logobege.png" alt=""></a></div>
                 <ul>
-                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Localização</a></li>
                     <li><a href="#">Ambiente</a></li>
-                    <li><a href="#">Pacotes</a></li>
+                    <li><a href="#">Serviços</a></li>
                     <li><a href="#">Instagram</a></li>    
                     <button><a href="#">Reservar</a></button>     
                 </ul>
@@ -120,10 +202,39 @@
            </div>
         </section>
      <main>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi enim consequatur libero ipsa harum nulla adipisci deleniti mollitia quibusdam cupiditate fugit vero, praesentium repellendus, temporibus sint dolor eius laudantium. Assumenda.
-            Laudantium vero sapiente itaque, illum cumque voluptates perspiciatis in ea provident rem tempore quae ab assumenda eos illo, reprehenderit eum aliquid fugit sint aliquam! Enim delectus sint accusamus ipsa blanditiis.
-            Necessitatibus ab facilis autem eveniet a quisquam vero, repellat ipsa ea aspernatur natus quam cupiditate aperiam, neque tempora fugiat adipisci cum voluptate. Architecto autem blanditiis soluta deserunt ex eum nihil!</p>
+        <section id="mainsec">
+            <h1>O seu Cantinho em Herval d'Oeste</h1>
+            <br>
+            <h3>Somos os pioneiros do turismo rural na comunidade Sede Belém, a mais tradicional da cidade.</h3>
+                    <div id="divh2">
+                    </div>
+            <h3>O Pôr do Sol mais bonito da região</h3>
+        </section>
+        <section class="content">
+            <h2>Localização</h2>
+            <p>Estamos muito bem localizados para facilitar sua chegada até nossa querida propriedade,
+                 são 8km do centro da cidade até a comunidade, sendo mais da metade do caminho pavimentado.</p>
+            <p>Acesse nossa localização no google maps clicando <a href="https://maps.app.goo.gl/mVkhBxshd7EzWnXr5?g_st=com.google.maps.preview.copy" target="_blank">aqui</a>, criamos um ponto pensando especialmente em facilitar a sua chegada até nós.</p>
+            <div></div>
+        </section>
+        <section class="content">
+            <h2>Nosso Espaço</h2>
+            <p>Nosso espaço conta com um leque de opções para sua família passar um dia perfeito no <a href="">Sítio Dourado</a>.</p>
+            <ul>
+                <li><a href="#">Quiosque:</a> Ideal para churrascos e eventos familiares</li>
+                <li><a href="#">Casa centenária:</a> Uma casa histórica aberta a visitação</li>
+                <li><a href="#">Gramado:</a> Gramado amplo e limpo, perfeito para crianças brincarem e correrem</li>
+                <li><a href="#">Roda de Fogo:</a> Uma roda de fogo, bancos espaçosos e um céu estrelado.</li>
+                <li><a href="#">Árvores Frutíferas:</a> Árvores diversas oferecendo frutos da estação, sinta-se livre para colher</li>
+                <li><a href="#">Animais de fazenda:</a> Animais dóceis para mostrar às crianças</li>
+                <li><a href="#">Riacho com queda d'água:</a> Riacho próprio para nado e pesca de pequenos peixes</li>
+                <li><a href="#">Piscina:</a> Piscina espaçosa para dias ensolarados</li>
+        </ul>
+        </section>
+        <section class="content">
+            <h2>Serviços</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda, molestias, consequuntur possimus veritatis necessitatibus natus ea tempore excepturi dolore vitae asperiores nihil itaque veniam facilis aperiam nulla magnam ipsa.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde natus, explicabo alias numquam deleniti pariatur ullam ab minus repellendus voluptate inventore possimus, tenetur cupiditate? Nemo autem porro saepe iusto voluptate!</p>
         </section>
     </main>
     <footer>
